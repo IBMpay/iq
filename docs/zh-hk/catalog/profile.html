@@ -1,0 +1,70 @@
+---
+layout: default
+title: "重複性配置 - OpenCart 使用指引"
+permalink: zh-hk/catalog/profile/
+---
+<h1>重複性配置</h1>
+<p>配置項目是從 OpenCart 版本 1.5.6 就加入的特色元素之一。建立此項目時可以使顧客能夠購買產品從結賬時選擇分期付款。此功能讓使用者更能輕易地收取顧客如何收取產品或服務的費用。</p>
+<p>前往 <strong>產品目錄(Catalog)</strong> 第三個選項便可以進入 <strong>重複性配置 (Recurring Profiles)</strong>，新增或修改現有配置文件可選清單頁面進行。</p>
+
+<p class="text-center"><img src="image/catalog/recurring/recurring-profiles-list.png" alt="Recurring Profiles List" class="img-thumbnail" /></p>
+
+<h2>創建定期文件</h2>
+
+<p class="text-center"><img src="image/catalog/recurring/recurring-profiles-info.png" alt="Recurring Profiles Info" class="img-thumbnail" /></p>
+
+<table class="table table-bordered">
+	<tbody><tr>
+		<th width="30%">Name *</th>
+		<td width="*">分期項目</td>
+	</tr>
+  <tr>
+		<td colspan="2" class="hints">* 為必填項目</td>
+	</tr>
+</tbody></table>
+
+<h4>Recurring Profile</h4>
+<table class="table table-bordered">
+	<tbody><tr>
+		<th width="30%">Price</th>
+		<td width="*">每期所支付的金額</td>
+	</tr>
+	<tr>
+		<th>Duration</th>
+		<td>維持時間 / 期數</td>
+	</tr>
+	<tr>
+		<th>Cycle</th>
+		<td>多少天/週/月/年執行付費</td>
+	</tr>
+	<tr>
+		<th>Frequency</th>
+		<td>對應上一項 Cycle 決定單位，共有五個選項：
+      <ul>
+        <li>Day - 天</li>
+        <li>Week - 週</li>
+        <li>Semi Month - 半個月</li>
+        <li>Month - 月</li>
+        <li>Year - 年</li>
+      </ul>
+    </td>
+	</tr>
+	<tr>
+		<th>Status</th>
+		<td>設定此項目可否於產品中選擇</td>
+	</tr>
+	<tr>
+		<th>Sort Order</th>
+		<td>於付款時顯示的排序</td>
+	</tr>
+</tbody></table>
+
+<p>在下方的 Trial Profile 是支付平台提供一個伺服器給你測試，基本上跟上述都相同。</p>
+
+<p>在該示例中，試用周期和試用持續時間都被設置為 <strong>1</strong> 並且頻率被設置為 <strong>月</strong>。 創建一個只有一個月的免費試用計劃。 如果想進行持續兩週的免費試用，則可以將試用期限設置為 <strong>1</strong> 。試用周期到 <strong>2</strong> 並將試用頻率設置為 <strong>週</strong>。</p>
+
+
+<h2>選取重複性配置到產品中</h2>
+<p>完成後將檔案儲存，新的文件將會顯示在清單上。接下來前往產品頁面，在 <strong>Recurring 標籤</strong> 中新增剛創建的文件加到產品中並選取適用的客戶群組，當完成更改後，產品的配置經已完成並儲存。有關如何設定客戶群組，可參閱<a href="zh-hk/sale/customer/group/">客戶群組</a>。</p>
+
+<p class="text-center"><img src="image/catalog/recurring/recurring-profiles-list.png" alt="Product - Recurring" class="img-thumbnail" /></p>

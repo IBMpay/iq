@@ -1,0 +1,230 @@
+---
+layout: default
+title: "選項 - OpenCart 使用指引"
+permalink: zh-hk/system/setting/option/
+---
+<h1>選項設定</h1>
+<p>選項主要是控制網站內的顯示資訊以及商店的基本功能如評級、稅項設定、帳戶、結帳項目等。</p>
+
+<h3>產品</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-product.png" alt="System Setting - Option Tag - Product" class="img-thumbnail" /></p>
+
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Category Product Count</td>
+    <td width="*">設定店面於選單中，是否顯示產品總數量</td>
+  </tr>
+  <tr>
+    <td>Default Items Per Page (Admin) <span class="required">*</span></td>
+    <td>設定管理者介面中，產品的每頁顯示數量</td>
+  </tr>
+</table>
+
+<h4>店面顯示</h4>
+<p>當 <strong>Category Product Count</strong> 設定為啟用時，如下圖所示，選單內的每個產品分類都有著產品總數於<a href="zh-hk/store-front/">頂端選單內</a>。</p>
+<p class="text-center"><img src="image/system/setting/setting-option-product-store-front.png" alt="Store Front - Menu products count" class="img-thumbnail" /></p>
+
+<div class="alert alert-info" role="alert">
+  <i class="fas fa-info-circle"></i>
+  如果商店內很多產品類別，強力建意使用者將此功能關閉，這樣一來可以減少網站系統的運算工作而令網店更快速顯示所有內容。
+</div>
+
+
+<h3>評級</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-reviews.png" alt="System Setting - Option Tag - Review" class="img-thumbnail" /></p>
+
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Allow Reviews</td>
+    <td width="*">允許會員摘寫貨品評級</td>
+  </tr>
+  <tr>
+    <td>Allow Guest Reviews</td>
+    <td>允許非會員顧客摘寫貨品評級</td>
+  </tr>
+</table>
+
+<h3>優惠券</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-voucher.png" alt="System Setting - Option Tag - Voucher" class="img-thumbnail" /></p>
+
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Voucher Min</td>
+    <td width="*">優惠券的最小面額</td>
+  </tr>
+  <tr>
+    <td>Voucher Max</td>
+    <td>優惠券的最大面額</td>
+  </tr>
+</table>
+
+
+<h3>稅項</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-taxes.png" alt="System Setting - Option Tag - Taxes" class="img-thumbnail" /></p>
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Display Prices With Tax</td>
+    <td width="*">啟用稅項，如果不需要可以關閉此功能</td>
+  </tr>
+  <tr>
+    <td>Use Store Tax Address</td>
+    <td>如果客戶未登錄，則使用商店地址計算稅金。使用者可以選擇使用商店地址作為客戶的送貨地址或付款地址。</td>
+  </tr>
+  <tr>
+    <td>Use Customer Tax Address</td>
+    <td>登錄時使用客戶的默認地址來計算稅金。 使用者可以選擇使用客戶送貨地址或付款地址的默認地址。</td>
+  </tr>
+</table>
+
+
+<h3>帳戶</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-account.png" alt="System Setting - Option Tag - Account" class="img-thumbnail" /></p>
+
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Customers Online</td>
+    <td width="*">通過客戶報告部分在線跟踪客戶。</td>
+  </tr>
+  <tr>
+    <td>Customers Activity</td>
+    <td>通過客戶報告部分跟踪客戶活動。</td>
+  </tr>
+  <tr>
+    <td>Log Customer Searches</td>
+    <td>記錄顧客搜尋紀綠</td>
+  </tr>
+  <tr>
+    <td>Customer Group</td>
+    <td>預設顧客群組</td>
+  </tr>
+  <tr>
+    <td>Customer Groups</td>
+    <td>顯示是否在登記時給顧客知道自己的顧客群。</td>
+  </tr>
+  <tr>
+    <td>Login Display Prices</td>
+    <td>設定是不會員才能看見價錢</td>
+  </tr>
+  <tr>
+    <td>Max Login Attempts</td>
+    <td>密碼錯誤時可允許會員嘗試登入次數，超出此數值後需等一小時系統自動解鎖或經由使用者從管理者介面手動解鎖。</td>
+  </tr>
+  <tr>
+    <td>Account Terms</td>
+    <td>設定登記成員時所使用的條款頁面。</td>
+  </tr>
+</table>
+
+
+<h3>結帳</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-checkout.png" alt="System Setting - Option Tag - Checkout" class="img-thumbnail" /></p>
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Invoice Prefix</td>
+    <td width="*">自定義發票編號格式</td>
+  </tr>
+  <tr>
+    <td>Display Weight on Cart Page</td>
+    <td>購物車中顯示重量</td>
+  </tr>
+  <tr>
+    <td>Guest Checkout</td>
+    <td>允許非會員結帳</td>
+  </tr>
+  <tr>
+    <td>Checkout Terms</td>
+    <td>結帳時所顯示的條款及細則，如果沒則不用選擇</td>
+  </tr>
+  <tr>
+    <td>Order Status</td>
+    <td>設定結帳後的訂單狀態</td>
+  </tr>
+  <tr>
+    <td>Processing Order Status</td>
+    <td>設置客戶的訂單在訂單開始減少和優惠券，優惠券和獎勵兌現之前必須達到的訂單狀態</td>
+  </tr>
+  <tr>
+    <td>Complete Order Status</td>
+    <td>設置顧客的訂單在允許訪問其可下載產品和禮品券之前必須達到的訂單狀態</td>
+  </tr>
+  <tr>
+    <td>Fraud Order Status</td>
+    <td>當顧客被懷疑試圖改變訂單付款細節或使用已經使用過的優惠券，禮券或積分時，設置訂單狀態</td>
+  </tr>
+  <tr>
+    <td>API User</td>
+    <td>Default API user the admin should use</td>
+  </tr>
+</table>
+
+
+<h3>庫存</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-stock.png" alt="System Setting - Option Tag - Stock" class="img-thumbnail" /></p>
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Display Stock</td>
+    <td width="*">顯示庫存</td>
+  </tr>
+  <tr>
+    <td>Show Out Of Stock Warning</td>
+    <td>當產品沒有庫存時，設定產品售罄的訊息</td>
+  </tr>
+  <tr>
+    <td>Stock Checkout</td>
+    <td>允許顧客於沒有庫存時也可以買產品</td>
+  </tr>
+</table>
+
+
+<h3>加盟</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-affilates.png" alt="System Setting - Option Tag - Affilates" class="img-thumbnail" /></p>
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Affiliate Group</td>
+    <td width="*">加盟成員群組</td>
+  </tr>
+  <tr>
+    <td>Affiliate Requires Approval</td>
+    <td>設定每一個加盟的成員要否批准才能加入</td>
+  </tr>
+  <tr>
+    <td>Automatic Commission</td>
+    <td>設定每完成一個訂單後會否自動計算佣金</td>
+  </tr>
+  <tr>
+    <td>Affiliate Commission (%)</td>
+    <td>加盟佣金</td>
+  </tr>
+  <tr>
+    <td>Affiliate Terms</td>
+    <td>設定登記加盟成員時所使用的條款頁面。</td>
+  </tr>
+</table>
+
+
+<h3>退款/退貨</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-returns.png" alt="System Setting - Option Tag - Returns" class="img-thumbnail" /></p>
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Return Terms</td>
+    <td width="*">設定退貨條款，需要從資訊頁面選擇</td>
+  </tr>
+  <tr>
+    <td>Return Status</td>
+    <td>退貨狀況</td>
+  </tr>
+</table>
+
+
+<h3>認證</h3>
+<p class="text-center"><img src="image/system/setting/setting-option-captcha.png" alt="System Setting - Option Tag - Captcha" class="img-thumbnail" /></p>
+<table class="table table-bordered">
+  <tr>
+    <td width="30%">Captcha</td>
+    <td width="*">選擇認證程式</td>
+  </tr>
+  <tr>
+    <td>Captcha Page</td>
+    <td>需要使用認證的頁面</td>
+  </tr>
+</table>

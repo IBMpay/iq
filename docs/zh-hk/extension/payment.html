@@ -1,0 +1,105 @@
+---
+layout: default
+title: "支付平台 - OpenCart 使用指引"
+permalink: zh-hk/extension/payment/
+---
+<h1>支付平台</h1>
+
+<h2>系統預設多款平台</h2>
+<p>OpenCart 預設已經免費提供了多種支付平台，功能蓋括了銀行轉帳至多個大型網上支付平台，使用者只須於頁面中按下安裝便能輕鬆啟用支付平台去迎合客戶的需求。</p>
+
+<div class="list-payment-gateway">
+	<ul class="list-inline">
+		<li>2Checkout</li>
+		<li>Alipay Pay</li>
+		<li>Alipay Cross-border</li>
+	  <li>Amazon Pay</li>
+		<li>Authorize.Net (AIM)</li>
+		<li>Authorize.Net (SIM)</li>
+		<li>Bank Transfer</li>
+		<li>BluePay Hosted Form</li>
+		<li>BluePay Redirect (Requires SSL)</li>
+		<li>CardConnect</li>
+		<li>Cardinity</li>
+		<li>Cheque / Money Order</li>
+		<li>Cash On Delivery</li>
+		<li>Divido</li>
+	  <li>eWAY Payment</li>
+		<li>First Data EMEA Connect (3DSecure enabled))</li>
+		<li>First Data EMEA Web Service API)</li>
+		<li>Free Checkout</li>
+		<li>G2A Pay</li>
+		<li>Globalpay Redirect</li>
+		<li>Globalpay Remote</li>
+		<li>Klarna Account</li>
+		<li>Klarna Checkout</li>
+		<li>Klarna Invoice</li>
+		<li>Lay-Buy</li>
+		<li>LIQPAY</li>
+		<li>NOCHEX</li>
+		<li>Paymate</li>
+		<li>PayPal (Powered By Braintree)</li>
+		<li>PayPal Express Checkout</li>
+		<li>PayPal Payflow Pro</li>
+		<li>PayPal Payflow Pro iFrame</li>
+		<li>PayPal Payments Standard</li>
+		<li>PayPal Pro</li>
+		<li>PayPal Pro iFrame</li>
+		<li>PayPoint</li>
+		<li>Payza</li>
+		<li>Perpetual Payments</li>
+		<li>Pilibaba for Chinese Checkout</li>
+		<li>Perpetual Payments</li>
+		<li>Realex Redirect</li>
+		<li>Realex Remote</li>
+		<li>SagePay Direct</li>
+		<li>SagePay Server</li>
+		<li>Sage Payment Solutions (US)</li>
+		<li>Secure Trading Payment Pages</li>
+		<li>Secure Trading Web Service</li>
+		<li>Skrill</li>
+		<li>Square</li>
+		<li>Web Payment Software</li>
+		<li>WorldPay Online Payments</li>
+	</ul>
+</div>
+
+<p>若以上清單沒有合適的支付平台，使用者可前往 OpenCart 官方市場的<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_category_id=3" target="_blank">支付平台</a>分類中尋找額外的支付平台插件。</p>
+
+<h2>編輯付款方式</h2>
+<p>在管理者介面內，啟用各個支付平台（如Paypal）都必須要先創建相關帳戶。在編輯的頁面上有著不同的資料欄供使用者填寫，內裡的資訊都可以從該支付平台中獲取，填寫正確的資料後便可以輕輕鬆鬆在商店完成交易處理。以下為共通需要填寫的資料，使其付款方式可以於商店中顯示選項讓顧客選擇：</p>
+
+<table class="table table-bordered">
+	<tbody><tr>
+		<th width="30%">Total</th>
+		<td width="*">設定購物金額到指定數目才可以供顧客選用。</td>
+	</tr>
+  <tr>
+		<th>Order Status</th>
+		<td>當顧客確認訂單時，設定訂單狀態，有關修改訂單狀態的詳情請參閱系統 > 本地化中的<a href="zh-hk/system/localisation/order-status/">訂單狀態</a>。</td>
+	</tr>
+  <tr>
+		<th>Status</th>
+		<td>「啟用」或「不啟用」該付款方式。</td>
+	</tr>
+	<tr>
+		<th>Sort Order</th>
+		<td>顯示該付款方式的次序。</td>
+	</tr>
+</tbody>
+</table>
+
+<h3>結帳頁面</h3>
+<p>在此頁中的第5步，顧客需要在完成購買前選擇一種付款方式。只要合乎指定金額、地區等條件，顧客便可以選擇使用者已啟用的支付平台來完成購物程序。</p>
+<p class="text-center"><img src="image/extension/payment/payment-store-front-checkout.png" alt="Store Front - Checkout" class="img-responsive" /></p>
+
+<h3>交易紀錄</h3>
+<p class="text-center"><img src="image/extension/payment/account-store-front-order-history.png" alt="Store Front -  Order History" class="img-responsive" /></p>
+<p>完成購物後，顧客只要前往「我的賬戶」(My Account)中的「交易紀錄」(Order History)，如上圖所示可以看見最新的訂單狀態為「Pending」。因為設定將支付方式的訂單狀態預設為「Pending」。</p>
+
+<p class="text-center"><img src="image/extension/payment/sales-order-list.png" alt="Sales Order - List" class="img-responsive" /></p>
+
+<p>只要使用者檢查了交易完成或失敗，使用者可以前往管理者介面中的「銷售」(Sales)的「訂單」(Order)中編輯該訂單的狀態，詳情請參閱<a href="zh-hk/sale/order/">訂單</a>。</p>
+
+<h3>技術支援</h3>
+<p>如需獲得對部份付款方式(插件)的技術支援，請訪問官方論壇的<a href="http://forum.opencart.com/viewforum.php?f=113" target="_blank">付款方式擴展部分</a>。</p>

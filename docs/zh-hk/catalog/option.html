@@ -1,0 +1,107 @@
+---
+layout: default
+title: "選項 - OpenCart 使用指引"
+permalink: zh-hk/catalog/option/
+---
+<h1>選項</h1>
+
+<p>選項功能可以使同一件產品下有更細緻的分類以及提高網上商店的靈活性，其中新增的每一個選項也可以獨立調整價格、大小、積分等項目；而顧客將產品添加到購物車之前，必須選擇該產品的選項。</p>
+<p>OpenCart 系統中經已預設了一列選項，從左側打開產品目錄並點擊第六項便可以進入以下選項的清單畫面。點擊藍色框的位置進入創建頁面。</p>
+<p class="text-center"><img src="image/catalog/options/option-list.png" alt="Options List" class="img-thumbnail" /></p>
+
+<h4>選項類別 (Option)</h4>
+<table class="table table-bordered">
+	<tbody><tr>
+		<th width="30%">Option Name *</th>
+		<td width="*">選項類別的名字</td>
+	</tr>
+	<tr>
+		<th>Type</th>
+		<td>類型，系統已經將眾多類型供我們選擇，當中包括：
+      <ul>
+        <li><strong>選擇型</strong>：Select(下拉式表單)、Radio(單選按鈕)、Checkbox(複選按鈕)</li>
+        <li><strong>輸入型</strong>：Text(文字)、Textarea(多行文本)</li>
+        <li><strong>檔案型</strong>：File(上載檔案)</li>
+        <li><strong>時間型</strong>：Date(日期)、Time(時間)、Date &amp; Time(日期及時間)</li>
+      </ul>
+    </td>
+	</tr>
+	<tr>
+		<th>Sort Order</th>
+		<td>群組次序，這個次序會影響模組於前台時出現時的次序，並不是管理平台清單上所看見的次序。如沒有特定次序可填 0 或留空此欄。</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="hints">* 為必填項目</td>
+	</tr>
+</tbody></table>
+<p><br></p>
+
+<h4>選項項目 (Option Values)</h4>
+<p>假如選了「選擇型」的類別，系統就會要求填寫可以選擇的項目資料，每個項目都可以由右下方的藍色按鈕中新增。</p>
+<table class="table table-bordered">
+	<tbody><tr>
+		<th width="30%">Option Value Name *</th>
+		<td width="*">選項項目的名字</td>
+	</tr>
+	<tr>
+		<th>Image</th>
+		<td>可以將特定圖片上存到該項目中，使顧客會更容易理解而減少購物時的誤會。</td>
+	</tr>
+	<tr>
+		<th>Sort Order</th>
+		<td>群組次序，這個次序會影響模組於前台時出現時的次序，並不是管理平台清單上所看見的次序。如沒有特定次序可填 0 或留空此欄。</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="hints">* 為必填項目</td>
+	</tr>
+</tbody></table>
+<p><br></p>
+<p class="text-center"><img src="image/catalog/options/option-info.png" alt="Options Info" class="img-thumbnail" /></p>
+
+<h2>選擇型 (Choose Type)</h2>
+<div class="alert alert-info">
+  <p>例子：<br/>
+    上圖建立了命名為 <strong>Colours</strong> 的選項，於該選項當中建立了 <strong>Red</strong> 及 <strong>Black</strong> 的兩個數值。而每個數值中都配上了相闗的顏色圖片。
+  </p>
+</div>
+
+<p>現在新創建的 <strong>Colours</strong> 中已抱含了兩個顏色，接下來便要將選項新增到產品當中。</p>
+
+<h3>新增選項到產品</h3>
+<p>就以iPod Shuffle為列，點擊旁邊的編輯進入貨品資料頁面。前往 <strong>選項(Option)</strong> 標籤，在左側的欄位輸入「Colours」讓系統找到所需的資訊；接著右側的第一項是設定是否必須填寫(Required)，然後下端就是新增可以選擇的項目。詳情請參閱產品中<a href="zh-hk/catalog/product/option/">選項</a>介紹。</p>
+<p class="text-center"><img src="image/catalog/options/prodict-info-option-radio.png" alt="Product Option Select" class="img-thumbnail" /></p>
+
+<h3>店面中的產品選項</h3>
+<p>透過以上步驟及解說，完成上述的設定後回到店面的iPod Shuffle，於售價的下方便多了選項的功能。</p>
+<p>如下圖所示，<strong>Colours</strong> 是必須填寫的項目，而因為選擇了 Radio 的形式，選項的旁邊都顯示了相應的圖片。</p>
+<p class="text-center"><img src="image/catalog/options/store-front-ipod-option.png" alt="Store front - Product Option Select" class="img-thumbnail" /></p>
+
+<h2>檔案型 (File Type)</h2>
+<p>檔案是指可以供顧客上載自己所需的額外要求到網站中，好讓使用者更清晰了解顧客的需要。在以下的例子中，為iPod Shuffle加上這個選項，讓顧客可以要求商店為他們的iPod Shuffle加上個性雷射雕刻到背面。</p>
+<p class="text-center"><img src="image/catalog/options/option-info-file.png" alt="Options Info File" class="img-thumbnail" /></p>
+<p>檔案型的選項毋須其他設置，只需要決定是否必須填寫就可以。</p>
+<p class="text-center"><img src="image/catalog/options/prodict-info-option-file.png" alt="Product Option File" class="img-thumbnail" /></p>
+<p>於店面內查看，於文字欄位下方可以看見上載文件的按鈕，只要將源檔從這裡上載就可以於結帳清單中看見文件名稱。</p>
+<p class="text-center"><img src="image/catalog/options/store-front-ipod-option-file.png" alt="Store front - Product Option File" class="img-thumbnail" /></p>
+
+
+<h2>時間型 (Date Type)</h2>
+<p>時間選項可以將內容設為日子、時間及兩者同時設定。將選項加入iPod Shuffle後，</p>
+<p class="text-center"><img src="image/catalog/options/option-info-date.png" alt="Options Info Date" class="img-thumbnail" /></p>
+<p>時間類型的同樣需要設定是否必須填寫，若這是非重要項目就選擇否。</p>
+<p class="text-center"><img src="image/catalog/options/prodict-info-option-date.png" alt="Product Option Date" class="img-thumbnail" /></p>
+<p>在示範中，為iPod Shuffle加上這個選項來設定送貨日子。完成修改後便可以到店面查看結果，如下圖所示，選項設置在上載檔案的下方。如果在次序上有要求，可於建立時改動產品的選項中出現的先後次序。</p>
+<p class="text-center"><img src="image/catalog/options/store-front-ipod-option-date.png" alt="Store front - Product Option Date" class="img-thumbnail" /></p>
+
+
+<h2>輸入型 (Input Type)</h2>
+<p>凡是輸入文字的類型都分了兩種類，單行輸入 (Text) 及多行輸入 (Textarea)；來作一個簡單的比喻，輸入收禮物的人的名字以及備註細節事項。在示範中，將輸入文字項目加到iPod Shuffle中，一設定文字輸入命名為禮物訊息 (Gift Text)，</p>
+<p class="text-center"><img src="image/catalog/options/option-info-text.png" alt="Options Info Text" class="img-thumbnail" /></p>
+<p>於產品頁面編輯時，同樣也需要設定此項目是否必須填寫，若這是非重要項目就選擇否。</p>
+<p class="text-center"><img src="image/catalog/options/prodict-info-option-text.png" alt="Product Option Text" class="img-thumbnail" /></p>
+<p>在示範中，為iPod Shuffle加上這個選項來設定禮物訊息後。完成修改便可以到店面查看結果，如下圖所示，選項設置在上載檔案的上方。如果在次序上有要求，可於建立時改動產品的選項中出現的先後次序。顧客可以從這個位置輸入想要的訊息在產品上。</p>
+<p class="text-center"><img src="image/catalog/options/store-front-ipod-option-text.png" alt="Store front - Product Option Text" class="img-thumbnail" /></p>
+
+<h2>購物車清單預覽</h2>
+<p class="text-center"><img src="image/catalog/options/store-front-cart-checkout.png" alt="Store front - Checkout list" class="img-thumbnail" /></p>
+<p>當顧客作出選購並將產品加到購物車時，購物車頁面中的清單會顯示產品的選項數值會於產品名下方顯示。當顧客完成結帳程序，帳單內亦會列出所有已填寫的選項。</p>
